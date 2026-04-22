@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9b9ce11c15c81e54fba6dc69e21bdf86,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 232.71718
+      value: 247.78549
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9b9ce11c15c81e54fba6dc69e21bdf86,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000023841858
+      value: -0.000011444092
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9b9ce11c15c81e54fba6dc69e21bdf86,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 272.85034
+      value: 266.1227
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9b9ce11c15c81e54fba6dc69e21bdf86,
         type: 3}
@@ -92,6 +92,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8778772827530518972}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b9ce11c15c81e54fba6dc69e21bdf86,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2623717280301974499}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b9ce11c15c81e54fba6dc69e21bdf86,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2873170566721899910}
   m_SourcePrefab: {fileID: 100100000, guid: 9b9ce11c15c81e54fba6dc69e21bdf86, type: 3}
 --- !u!1 &2549545311619466966 stripped
 GameObject:
@@ -189,10 +197,11 @@ MonoBehaviour:
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"nevMesh","value":null,"typeHandle":{"Identification":"UnityEngine.AI.NavMeshAgent,
       UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"dead","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"runDistance","value":{"$content":7.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"animator","value":null,"typeHandle":{"Identification":"UnityEngine.Animator,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"animator","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
       UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"attackDistance","value":{"$content":3.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _objectReferences:
+    - {fileID: 9136169271206528534}
 --- !u!114 &8778772827530518972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,3 +218,46 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: 8e8fbbee30d90e84592bbf81e16fa1d7, type: 2}
+--- !u!114 &2623717280301974499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2549545311619466966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe58df89b5b74a97a123b5ed2b70422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: b3b0e8cf336255f44b945cf573358cdc, type: 2}
+--- !u!65 &2873170566721899910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2549545311619466966}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.8483328, z: 1}
+  m_Center: {x: 0, y: 0.9336774, z: 0}
+--- !u!95 &9136169271206528534 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 9b9ce11c15c81e54fba6dc69e21bdf86,
+    type: 3}
+  m_PrefabInstance: {fileID: 3431923382157474695}
+  m_PrefabAsset: {fileID: 0}
