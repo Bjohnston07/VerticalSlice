@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 205771258}
   - component: {fileID: 205771257}
   - component: {fileID: 205771256}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medicine
   m_TagString: medicine
   m_Icon: {fileID: 0}
@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 378215364}
   - component: {fileID: 378215363}
   - component: {fileID: 378215362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medicine (3)
   m_TagString: medicine
   m_Icon: {fileID: 0}
@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 537594736}
   - component: {fileID: 537594735}
   - component: {fileID: 537594734}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medicine (5)
   m_TagString: medicine
   m_Icon: {fileID: 0}
@@ -1253,7 +1253,7 @@ GameObject:
   - component: {fileID: 643595097}
   - component: {fileID: 643595096}
   - component: {fileID: 643595095}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medicine (2)
   m_TagString: medicine
   m_Icon: {fileID: 0}
@@ -1403,10 +1403,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 1047267575}
   - component: {fileID: 1047267574}
   - component: {fileID: 1047267573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medicine (7)
   m_TagString: medicine
   m_Icon: {fileID: 0}
@@ -2196,7 +2196,7 @@ GameObject:
   - component: {fileID: 1224642949}
   - component: {fileID: 1224642948}
   - component: {fileID: 1224642947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medicine (4)
   m_TagString: medicine
   m_Icon: {fileID: 0}
@@ -2297,10 +2297,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2952829660413761187, guid: fe1d76db9733e8f4dab20e69da2e1a27,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529978278321466580, guid: fe1d76db9733e8f4dab20e69da2e1a27,
+        type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529978278321466580, guid: fe1d76db9733e8f4dab20e69da2e1a27,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
     - target: {fileID: 5391116513882316729, guid: fe1d76db9733e8f4dab20e69da2e1a27,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391116513882316729, guid: fe1d76db9733e8f4dab20e69da2e1a27,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715627173736796335, guid: fe1d76db9733e8f4dab20e69da2e1a27,
+        type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"speed","value":{"$content":5.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"dash
+        distance","value":{"$content":300,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"dash
+        direction","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"flamethrower
+        collider","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.BoxCollider,
+        UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"camera
+        transform","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Transform,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"sensitivity","value":{"$content":0.1,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"lookX","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"lookY","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"flame","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"health","value":{"$content":100.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isHit","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"playerRB","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Rigidbody,
+        UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715627173736796335, guid: fe1d76db9733e8f4dab20e69da2e1a27,
+        type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715627173736796335, guid: fe1d76db9733e8f4dab20e69da2e1a27,
+        type: 3}
+      propertyPath: _data._objectReferences.Array.data[3]
+      value: 
+      objectReference: {fileID: 1937395847}
+    - target: {fileID: 7367648435565307044, guid: fe1d76db9733e8f4dab20e69da2e1a27,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8123988775148571657, guid: fe1d76db9733e8f4dab20e69da2e1a27,
         type: 3}
@@ -2706,7 +2762,7 @@ GameObject:
   - component: {fileID: 1485643078}
   - component: {fileID: 1485643077}
   - component: {fileID: 1485643076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medicine (6)
   m_TagString: medicine
   m_Icon: {fileID: 0}
@@ -3144,7 +3200,7 @@ GameObject:
   - component: {fileID: 1593072790}
   - component: {fileID: 1593072789}
   - component: {fileID: 1593072788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medicine (1)
   m_TagString: medicine
   m_Icon: {fileID: 0}
@@ -3613,6 +3669,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3476499947573637210, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46,
     type: 3}
   m_PrefabInstance: {fileID: 764950308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1937395847 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4529978278321466580, guid: fe1d76db9733e8f4dab20e69da2e1a27,
+    type: 3}
+  m_PrefabInstance: {fileID: 1285321531}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1962245520 stripped
 Transform:
