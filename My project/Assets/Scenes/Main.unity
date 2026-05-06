@@ -2300,7 +2300,7 @@ PrefabInstance:
     - target: {fileID: 4529978278321466580, guid: fe1d76db9733e8f4dab20e69da2e1a27,
         type: 3}
       propertyPath: m_Interpolate
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5391116513882316729, guid: fe1d76db9733e8f4dab20e69da2e1a27,
         type: 3}
