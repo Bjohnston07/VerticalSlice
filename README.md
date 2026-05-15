@@ -57,6 +57,9 @@ I have a c# script called Restart that contains a method that enables the three 
 the player's current health reaches 0. This keeps the activation of the death screen which is an irreversible action until the player restarts the game outside of the UI graph and
 keeps the actual logic from performing that outside of the graph.
 
+<img width="1581" height="687" alt="image" src="https://github.com/user-attachments/assets/1da223e2-10ef-418f-84b8-19458d2e4ba4" />
+
+
 Question 4:
 I created a timeline cutscene within a new start menu scene that has the camera pan down in front of an enemy and play animations. It also includes an activation track to 
 turn on the button that loads scene 1, dropping the player into the game.
