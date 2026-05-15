@@ -7,6 +7,7 @@ TagManager:
   - enemy
   - medicine
   - flame
+  - sixthSense
   layers:
   - Default
   - TransparentFX

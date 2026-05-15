@@ -19,7 +19,47 @@ I added a state machine section that connects to my animator and the enemy. This
 The last section of the state machine is the Die state which can be transitioned to from the idle or chase state if the dead object variable boolean is on. This boolean is managed by the general enemy script graph, not a state machine graph, when the enemy's health reaches 0. Once the Die state is entered, the other booleans will turn off and the Dead animation trigger will be set casuing the death animation to occur.
 
 ## Milestone 2 Devlog
-Milestone 2 Devlog goes here.
+
+**Comment based on the milestone 1 feedback, the enemies are supposed to get to you, the player is meant to stand and fight and it is expected to take damage which is why the
+enemies can be as fast as they are and as hard to kill as they are. They aren't meant to be easy to kill fodder, but dangerous monsters
+
+Question 1:
+Add a feature to display a UI element if an enemy is behind you and within a certain range
+
+Steps:
+1. Create the UI element and add and shape a new collider behind the player
+2. Create the system in visual scripting for the collision detection for the player in the enemy graph and connect that to a method within the UI graph
+
+Substeps:
+1. Create a new text element in the canvas
+2. Give is some text like "You feel watched" or something like that
+3. Give the player a new empty object called "sixth sense" attached with a new sphere collider behind the player
+4. Shape the sphere collider and set it to trigger
+1. Give the sixth sense object a unique tag
+
+
+1. Create a new object variable in the UI script to hold the text object
+2. Create a new custom event in the UI script to enable the text object
+3. Create another custom event to disable the text object
+4. Add a new section to the enemy graph with on trigger enter checking the tag of the game object it collided with
+5. if the tag check is successful, call the event to enable the object
+6. Add a on trigger exit node checking the tag
+7. call the event to disable the object 
+
+Question 2:
+The breakdown helped somewhat breaking down my feature I wish to add into smaller steps is something I feel like I naturally do anyway to a certain extent. My main complicating
+feature being the flamethrower overheat was already implemented therefore this new feature ended up being a little simpler. Due to this I feel like I could have thought of these
+steps while creating the feature anyway however I can definitely see the vision with much more complicated content. To improve my breakdowns I think I need to keep more consistency
+with the complexity of my steps. Some steps could have been combined and some steps could have been split up most likely. 
+
+Question 3:
+I have a c# script called Restart that contains a method that enables the three objects required when the player dies. This method is called within the UI visual script whenever
+the player's current health reaches 0. This keeps the activation of the death screen which is an irreversible action until the player restarts the game outside of the UI graph and
+keeps the actual logic from performing that outside of the graph.
+
+Question 4:
+I created a timeline cutscene within a new start menu scene that has the camera pan down in front of an enemy and play animations. It also includes an activation track to 
+turn on the button that loads scene 1, dropping the player into the game.
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
 ## Milestone 4 Devlog
