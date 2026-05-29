@@ -63,8 +63,24 @@ keeps the actual logic from performing that outside of the graph.
 Question 4:
 I created a timeline cutscene within a new start menu scene that has the camera pan down in front of an enemy and play animations. It also includes an activation track to 
 turn on the button that loads scene 1, dropping the player into the game.
+
 ## Milestone 3 Devlog
-Milestone 3 Devlog goes here.
+
+Question 1:
+My shader graph works by taking the URP sample buffer (the original screen) and multiplying it by a sample texture 2D node inputted with the screen position and a texture2D property defaulted to a red effect. This value and the URP sample buffer are inputted into a LERP node to interpolate between the original image and the red image based on an amount dictated by a float property that changes in a script graph whenever the player takes damage or heals. The graph is intended to have a red tint fall over the screen that gets deeper as the player takes more damage, so at low health the world will become very red.
+
+<img width="2020" height="1266" alt="image" src="https://github.com/user-attachments/assets/cb0e4db4-b659-492e-a1c5-73eadd17591a" />
+
+<img width="1848" height="1094" alt="image" src="https://github.com/user-attachments/assets/8c320b21-3d55-4523-bb24-efe36158bb2a" />
+**This is the equation I created to turn the players health into the 0-1 value float input into the LERP node
+
+Question 2: 
+Based on week 8's feedback, I changed the sixth sense text to "You feel stalked" which I hope gives a clearer picture of it's intended purpose of showing if an enemy is behind you. I also created an equation that converts the old timer of 1-4 for overheat into 1-100 and display that value on screen instead. There was a light source added to the flamethrower that turns on and off along with the flame particles. I turned the player taking damage from on collision to trigger with an animation event during the attack animation to better match up with when the enemy actually, visibly hits you. I also added a hurt image that turns on and off when you get hit to better allow the player to recognize when they have been hit.
+
+Question 3:
+For content, I created a map to give the player a more guided sense of direction for where they must go and give a clearer end point. The player knows the limits on where they can go and the description tells them that they must clear the enemies throughout the map. I also converted the old starting cutscene to incorporate the new map
+
+
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
 ## Final Devlog
