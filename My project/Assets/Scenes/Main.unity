@@ -2128,7 +2128,7 @@ PrefabInstance:
     - target: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.83
+      value: -2.87
       objectReference: {fileID: 0}
     - target: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5,
         type: 3}
@@ -3313,7 +3313,7 @@ PrefabInstance:
     - target: {fileID: 1510288242704437368, guid: f866648d31fd9494093daef232970acf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.758
+      value: 21.772
       objectReference: {fileID: 0}
     - target: {fileID: 1510288242704437368, guid: f866648d31fd9494093daef232970acf,
         type: 3}
@@ -5453,6 +5453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549545311619466966, guid: d4fc4532ef09afe459e6836308d9e39e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2894158006401309804, guid: d4fc4532ef09afe459e6836308d9e39e,
         type: 3}
@@ -8469,7 +8474,7 @@ PrefabInstance:
     - target: {fileID: 6728577463625951474, guid: e8677bde30e06f341b0e897430988f1c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.699965
+      value: 21.713972
       objectReference: {fileID: 0}
     - target: {fileID: 6728577463625951474, guid: e8677bde30e06f341b0e897430988f1c,
         type: 3}
@@ -10338,7 +10343,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: e3cf033abde42b6499459669024a96cc, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 30ed872ab3fc5ef4bb4c2bcb563bfea3, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1001 &1585262339
 PrefabInstance:
@@ -10500,6 +10505,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549545311619466966, guid: d4fc4532ef09afe459e6836308d9e39e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2894158006401309804, guid: d4fc4532ef09afe459e6836308d9e39e,
         type: 3}
@@ -12799,7 +12809,7 @@ PrefabInstance:
     - target: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.84
+      value: 1.878
       objectReference: {fileID: 0}
     - target: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5,
         type: 3}
