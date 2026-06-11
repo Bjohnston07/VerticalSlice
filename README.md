@@ -80,10 +80,62 @@ Based on week 8's feedback, I changed the sixth sense text to "You feel stalked"
 Question 3:
 For content, I created a map to give the player a more guided sense of direction for where they must go and give a clearer end point. The player knows the limits on where they can go and the description tells them that they must clear the enemies throughout the map. I also converted the old starting cutscene to incorporate the new map
 
-
-## Milestone 4 Devlog
-Milestone 4 Devlog goes here.
 ## Final Devlog
-Final Devlog goes here.
+
+Question 1:
+The player will spawn in and search the area for enemies and medicine items. Once the enemies are cleared, the player will interact with the podium at the end to win the game and
+"purify" the temple. This vertical slice sets the tone, and core gameplay loop that can be recreated and mixed up through a larger game that leaves plenty of room for more enemy
+types, larger maps, and more interesting art/audio assets while clearly presenting the actual features of the game.
+
+Question 2:
+As the player's health changes the rendering effect that applies a red tint over the screen getts deeper/lighter. For example as the player takes damage, the equation i created
+converts that health into a value from 0-1 that is inputted into the lerp node. This float property is created within the shader graph but is set within my script graphs whenever
+the player is hit, on start, as well as whenever the player heals. It works by taking the URP sample buffer (the original screen) and multiplying it by a sample texture 2D node 
+inputted with the screen position and a texture2D property defaulted to a red effect. This value and the URP sample buffer are inputted into a LERP node to interpolate between 
+the original image and the red image based on an amount dictated by a float property that changes in a script graph whenever the player takes damage or heals. It is the same 
+system from milestone 3 as we were told this was allowed. 
+
+Question 3:
+My plan for breaking down a large system into smaller pieces more closely aligns with the task step break-downs learned this quarter. The visual/more artistic style never really
+helped me however the more list and task focused style did. This system also allows me to have a discrete and refined set of instructions to fulfill when
+actually going to make the system that the bubble diagrams don't give. The process goes something like:
+
+1. Identify the major systems required for the core idea (the prompt implies there is already a game idea and that I only need the process for creating my systems)
+2. Identify the major components objects required for that specific system (what I already know basically, like if I want to implement audio then I know i need an audio source 
+component and clips played in a script)
+3. List out each small step to create this task in order to try and identify what I don't know of the process before going into making it and fill in any gaps that might appear
+if I were to not do this
+
+If you plan poorly, it may make each system seem easier to make than it actually is since you haven't looked in depth at each task. However planning well will accurately tell 
+the difficulty of creating your game which will naturally tell you the scope. It allows you to determine the difficulty of the implementation of each system and identify
+potential difficulties before implementation rather than trying to figure it out halfway through with broken code. Knowing this beforehand allows you to plan/change things accordingly
+so you can bring yourself back into scope. Thinking through what each system requires components and objects wise also will help identify missing pieces you may not have thought of
+initially.
+
+It really helped with the vertical slice project as there were a lot of systems I had never really worked with before so I wasn't aware of what components they would require. Things
+like creating animation events and using the cinemachine camera which I had never used I was able to accurately identify through research and planning how long it would take and 
+whether or not it was within scope to try and implement as someone who had never touched it and didn't know these things. The research was integral here as using helpful videos and
+Unity docs streamlined this process as the process itself would never have been completed on my own trying to figure out unfamiliar components. I found the process unnecessary for
+systems I was confident in such as displaying and manipulating UI elements and was able to complete them myself without issue while not using the process. I am confident due to this
+fact that it would have added unnecessary time.
+
 ## Open-source assets
-- Cite any external assets used here!
+
+Audio:
+[Flamethrower Effects](https://assetstore.unity.com/packages/audio/sound-fx/weapons/muhguns-148666)
+[Zombie Noise](https://assetstore.unity.com/packages/audio/sound-fx/zombie-sound-pack-free-version-124430)
+
+Map:
+[Ground Texture](https://assetstore.unity.com/packages/3d/environments/dungeons/cathedral-and-cemetery-kit-29240)
+[Building Assets](https://assetstore.unity.com/packages/3d/environments/dungeons/dungeon-modular-pack-295430)
+
+Enemy and Animation:
+Mixamo Parasite L Starkie model and various zombie animations: attack, run, idle, death
+
+Items:
+[Flamethrower Model](https://www.fab.com/listings/0e0aee5b-6ddf-4e58-b6a1-87b5ad54c750)
+[Flamethrower Particle](https://assetstore.unity.com/packages/vfx/particles/free-quick-effects-vol-1-304424)
+[Medicine Model](https://assetstore.unity.com/packages/3d/props/first-aid-set-160073)
+
+
+
