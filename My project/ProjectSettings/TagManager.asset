@@ -8,6 +8,7 @@ TagManager:
   - medicine
   - flame
   - sixthSense
+  - win
   layers:
   - Default
   - TransparentFX
