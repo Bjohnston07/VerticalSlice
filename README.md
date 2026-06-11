@@ -94,6 +94,7 @@ the player is hit, on start, as well as whenever the player heals. It works by t
 inputted with the screen position and a texture2D property defaulted to a red effect. This value and the URP sample buffer are inputted into a LERP node to interpolate between 
 the original image and the red image based on an amount dictated by a float property that changes in a script graph whenever the player takes damage or heals. It is the same 
 system from milestone 3 as we were told this was allowed. 
+<img width="2020" height="1266" alt="image" src="https://github.com/user-attachments/assets/cb0e4db4-b659-492e-a1c5-73eadd17591a" />
 
 Question 3:
 My plan for breaking down a large system into smaller pieces more closely aligns with the task step break-downs learned this quarter. The visual/more artistic style never really
